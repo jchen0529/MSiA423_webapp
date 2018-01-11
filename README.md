@@ -1,2 +1,15 @@
-# MSiA423_webapp
-Analyze bikeshare data to predict demands and deploy model 
+
+#MSiA 423 AnalyticsValueChain Project
+==============================
+
+Goal: Understand the processes involved in building and deploying a web app
+Project focus: Analyze DC Capital Bikeshare data to predict demands and deploy model 
+
+Project Organization
+------------
+
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── app
+    ├── develop
+
+--------
