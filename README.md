@@ -10,5 +10,5 @@ Project Organization
 
     ├── README.md          <- The top-level README for developers using this project.
     ├── app                         <- 
-    ├── develop                   <- Everything related to data analysis and model building
+    ├── develop                  <- Everything related to data analysis and model building
 --------
