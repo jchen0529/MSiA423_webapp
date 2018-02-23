@@ -9,6 +9,9 @@ Project Organization
 ------------
 
     ├── README.md          <- The top-level README for developers using this project.
-    ├── app                         <- 
-    ├── develop                  <- Everything related to data analysis and model building
+    ├── app                         <- Everything related to front-end web app
+    ├── develop                  <- Everything related to data analysis and model building                 
+      ├──--- data                <- UCI 2011_2012 bikeshare data (hour.csv)
+      ├──--- EDA/analysis        <- EDA and prediction model
+
 --------
