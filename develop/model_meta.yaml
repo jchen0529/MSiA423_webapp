@@ -1,0 +1,3 @@
+build_features:
+  feature_columns: ['mnth', 'hr', 'weekday', 'weathersit', 'temp', 'hum', 'windspeed']
+  evaluate_performance: 

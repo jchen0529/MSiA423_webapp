@@ -9,12 +9,16 @@ Project Organization
 ------------
 
     ├── README.md          <- The top-level README for developers using this project.
+    ├── requirements.txt              <- requirements file
+    ├── views.py                		<- run webapp locally
     ├── app                         <- Everything related to front-end web app
-      ├── views.py                		<- run webapp locally
-      ├── requirements.txt              <- requirements file
+      ├── __init__.py                	<- initialize the application
+      ├── README.md               		<- explains the html files in templates
+	  ├── templates                		<- html files for webpages
+	  ├── static                		<- folder for static files
     ├── develop                  <- Everything related to data analysis and model build                 
       ├── data                			<- UCI 2011_2012 bikeshare data (hour.csv)
-      ├── 2011_12 bikeshare data        <- Jupyter notebook analysis that includes EDA and model building
+      ├── 2011_12 bikeshare data.ipynb  <- Jupyter notebook analysis that includes EDA and model building
       ├── rf.pkl        				<- Final random forest model saved as pkl file
       ├── predict.py        			<- predict function applied to user input
 
