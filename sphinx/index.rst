@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to bikeshare_predict's documentation!
+Welcome to bikeshare predict's documentation!
 =============================================
 
 This is my introduction to this project
@@ -12,15 +12,12 @@ Requirements:
 
 My project depends on the packages specified in requirements.txt file.
 
-Contents:
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   tutorial
    code
-
 
 
 Indices and tables

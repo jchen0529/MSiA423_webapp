@@ -13,14 +13,16 @@ import numpy as np
 import pickle
 from sklearn.externals import joblib
 
-
 def predictresponse(input_vals):
 	""" Main predict function
 
 	load the random forest model exported from jupyter notebook
 	conver user input values into 2D array for model to work with
 
+	:param input_vals: list of user input variables
+
 	"""
+
 	#rfModel = pickle.load((open("rf.pkl", "rb")))
 	rfModel = joblib.load("./develop/rf.pkl")
 	testdf = pd.DataFrame(np.array([input_vals]),

@@ -1,7 +1,14 @@
-AUTO GENERATED DOCUMENTATION
+Data preprocessing
 ============================
 
-.. automodule:: predict
+.. automodule:: data 
    :members:
-.. automodule:: views
+
+
+Model building
+============================
+
+.. automodule:: model
+   :members:
+.. automodule:: predict
    :members:

@@ -19,7 +19,7 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('/Users/siliangchen/MSiA423_webapp')) #views.py
+sys.path.insert(0, os.path.abspath('/Users/siliangchen/MSiA423_webapp')) #application.py
 sys.path.insert(0, os.path.abspath('/Users/siliangchen/MSiA423_webapp/develop')) #predict.py
 
 # -- General configuration ------------------------------------------------
@@ -48,7 +48,7 @@ master_doc = 'index'
 # General information about the project.
 project = 'bikeshare_predict'
 copyright = '2018, jamieChen'
-author = 'jamieChen'
+author = 'jamie Chen'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>AUTO GENERATED DOCUMENTATION &#8212; bikeshare_predict 1.0.0 documentation</title>
+    <title>Data preprocessing &#8212; bikeshare_predict 1.0.0 documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,7 +26,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Tutorial documentation" href="tutorial.html" />
+    <link rel="prev" title="Welcome to bikeshare predict’s documentation!" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -42,9 +42,34 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="module-predict">
-<span id="auto-generated-documentation"></span><h1>AUTO GENERATED DOCUMENTATION<a class="headerlink" href="#module-predict" title="Permalink to this headline">¶</a></h1>
-<p>This is the main predict file for predicting bikeshare demand.</p>
+  <div class="section" id="module-data">
+<span id="data-preprocessing"></span><h1>Data preprocessing<a class="headerlink" href="#module-data" title="Permalink to this headline">¶</a></h1>
+<p>This is the main data readin and transform file to prepare the dataset for model.py</p>
+<p>Author: Jamie Chen</p>
+<dl class="function">
+<dt id="data.preprocess">
+<code class="descclassname">data.</code><code class="descname">preprocess</code><span class="sig-paren">(</span><em>datafolder</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#data.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preprocessing</p>
+<p>Readin:
+load the data from the folder in the same directory and save as a pd dataframe</p>
+<p>Data transform:
+1. Coerce categorical variables to be of type category
+2. drop row identifier and features based on EDA</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-model">
+<span id="model-building"></span><h1>Model building<a class="headerlink" href="#module-model" title="Permalink to this headline">¶</a></h1>
+<p>This is the main random forest model file for predicting bikeshare demand.</p>
+<p>Author: Jamie Chen</p>
+<dl class="function">
+<dt id="model.rfmodel">
+<code class="descclassname">model.</code><code class="descname">rfmodel</code><span class="sig-paren">(</span><em>hour</em><span class="sig-paren">)</span><a class="headerlink" href="#model.rfmodel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main random forest function
+split dataset into test and train and run rf regression</p>
+</dd></dl>
+
+<span class="target" id="module-predict"></span><p>This is the main predict file for predicting bikeshare demand.</p>
 <p>Author: Jamie Chen</p>
 <dl class="function">
 <dt id="predict.predictresponse">
@@ -54,18 +79,24 @@
 conver user input values into 2D array for model to work with</p>
 </dd></dl>
 
-<span class="target" id="module-views"></span></div>
+</div>
 
 
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Data preprocessing</a></li>
+<li><a class="reference internal" href="#module-model">Model building</a></li>
+</ul>
+<div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="tutorial.html" title="previous chapter">Tutorial documentation</a></li>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to bikeshare predict&#8217;s documentation!</a></li>
   </ul></li>
 </ul>
 </div>

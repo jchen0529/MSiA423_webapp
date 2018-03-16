@@ -7,32 +7,35 @@ Author: Jamie Chen
 """
 
 import pandas as pd
+import logging
 
+# create logging file
+logging.basicConfig(filename='data_preprocess.log',level=logging.DEBUG)
 
 def preprocess(datafolder,filename):
-	""" Preprocessing
+	""" Preprocessing: load the data and clean/transform
 
-	Readin:
-	load the data from the folder in the same directory and save as a pd dataframe
-
-	Data transform:
-	1. Coerce categorical variables to be of type category
-	2. drop row identifier and features based on EDA
+	:param datafolder: Folder name of input data file
+    :param filename: Input filename
 
 	"""
 	inpath = datafolder
 	infilename = filename
 	infile = pd.read_csv(inpath + "/" +infilename)
+	logging.debug('File read in from %s', inpath)
 
 	#coerce categorical variables to category type
 	categoryVariableList = ["hr","weekday","mnth","season","weathersit","holiday","workingday"]
 	for var in categoryVariableList:
 		infile[var] = infile[var].astype("category")
+	logging.info('Set categorical variables to data type "category"')
 
 	#drop insignificant/redundant features
 	infile = infile.drop(['instant'], axis=1)
 	dropFeatures = ["casual","atemp", "season","registered", "dteday", "dayofmonth", "workingday", "yr", "holiday"]
 	final_data = infile.drop(dropFeatures, axis =1)
+	logging.info('Dropped trivial features based on EDA finding"')
+
 	return final_data
 
 hour = preprocess("data","hour.csv")

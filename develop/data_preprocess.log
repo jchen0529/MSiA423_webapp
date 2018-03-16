@@ -1,0 +1,17 @@
+
+DEBUG:root:File read in from data
+INFO:root:Set categorical variables to data type "category"
+INFO:root:Dropped trivial features based on EDA finding"
+DEBUG:root:File read in from data
+INFO:root:Set categorical variables to data type "category"
+INFO:root:Dropped trivial features based on EDA finding"
+INFO:root:Split data into test and train.
+INFO:root:Applied log transformation to response variable bike count.
+INFO:root:Trained a random forest model.
+INFO:root:Saved model in a pkl file.
+DEBUG:root:File read in from data
+INFO:root:Set categorical variables to data type "category"
+INFO:root:Dropped trivial features based on EDA finding"
+DEBUG:root:File read in from data
+INFO:root:Set categorical variables to data type "category"
+INFO:root:Dropped trivial features based on EDA finding"
