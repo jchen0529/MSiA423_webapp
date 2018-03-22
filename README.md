@@ -1,6 +1,6 @@
 
 # Capital Bikeshare Demand Prediction Flask App
-===============================================
+====================================================
 
 ## Project Objective 
 Understand the process involved in building and deploying a flask web app. The app's focus is to predict capital bikeshare demand to inform users and bikeshare officials.
@@ -84,8 +84,9 @@ We performed unit testing (`develop/data.py`) for `develop/predict.py` file. The
 * `predictresponse()`
 
 ## Logging
-See develop folder data.log for logging added to data preprocessing
-(Logging as also been added to application.py)
+Two log files:
+- application.log
+- see develop folder data.log for logging added to data preprocessing
 
 
 
