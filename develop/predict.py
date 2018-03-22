@@ -1,15 +1,30 @@
+"""
+
+This is the main predict file for predicting bikeshare demand.
+
+Author: Jamie Chen
+
+"""
+
+
 from sklearn.ensemble import RandomForestRegressor
 import pandas as pd
 import numpy as np
 import pickle
 from sklearn.externals import joblib
 
-
 def predictresponse(input_vals):
-	#load model
+	""" Main predict function
+
+	load the random forest model exported from jupyter notebook
+	conver user input values into 2D array for model to work with
+
+	:param input_vals: list of user input variables
+
+	"""
+
 	#rfModel = pickle.load((open("rf.pkl", "rb")))
 	rfModel = joblib.load("./develop/rf.pkl")
-	#convert input values into 2D array for model to work
 	testdf = pd.DataFrame(np.array([input_vals]),
 		columns=["mnth", "hr", "weekday", "weathersit", "temp", "hum","windspeed"])
 	modelpred = rfModel.predict(X=testdf)
