@@ -75,7 +75,7 @@ Then, activate the conda environment by entering `source activate myenv`.
 5. Now enter `python application.py`. The app should be running. Have fun!
 
 ## Website link
-[Link to the web app](http://ec2-54-175-5-62.compute-1.amazonaws.com:5000)
+[Link to the web app](http://ec2-34-230-43-246.compute-1.amazonaws.com:5000)
 
 
 ## Unit Testing
