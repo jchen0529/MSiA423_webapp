@@ -6,6 +6,7 @@ from msiapp.models import hour
 
 import pandas as pd
 from develop.predict import predictresponse
+import logging
 
 #app = Flask(__name__)
 
@@ -43,4 +44,6 @@ def result():
 	return render_template("result.html", result = predict_format, hours = hour.query.all())
 
 if __name__ == "__main__":
+	#logging.basicConfig(filename='application.log', level=logging.DEBUG)
+    #logger = logging.getLogger(__name__) 
 	application.run(use_reloader=True, debug=True)

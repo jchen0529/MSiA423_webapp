@@ -83,6 +83,10 @@ We performed unit testing (`develop/data.py`) for `develop/predict.py` file. The
 * `preprocess()`
 * `predictresponse()`
 
+## Logging
+See develop folder data.log for logging added to data preprocessing
+(Logging as also been added to application.py)
+
 
 
 
